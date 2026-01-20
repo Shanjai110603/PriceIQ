@@ -42,7 +42,17 @@ cp .env.local.example .env.local
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000)
+5. **Set up Email Notifications** (Optional but recommended):
+   - Sign up for a free [Resend](https://resend.com) account
+   - Get your API key from the dashboard
+   - Add to `.env.local`:
+```bash
+RESEND_API_KEY=re_your_api_key_here
+ADMIN_EMAIL=your-admin-email@example.com
+```
+   - Emails will work in dev mode without a key (logged to console)
+
+6. Open [http://localhost:3000](http://localhost:3000)
 
 ## 💰 Zero-Cost Stack
 
@@ -84,10 +94,50 @@ priceiq/
 
 ## 📊 Development Roadmap
 
-- [x] Phase 1: Foundation (Days 1-10)
-- [ ] Phase 2: Core Features (Days 11-20)
-- [ ] Phase 3: Polish & Launch (Days 21-30)
-- [ ] Phase 4: Data Collection (Days 31-45)
+### ✅ Phase 1: Foundation
+**Status**: Complete
+
+- [x] Project setup and architecture
+- [x] Next.js 14 app structure with TypeScript
+- [x] Supabase integration (Auth + Database)
+- [x] Core UI components and design system
+- [x] Database schema design and implementation
+
+---
+
+### 🚧 Phase 2: Core Features
+**Status**: In Progress
+
+- [ ] Rate discovery engine with advanced filters
+- [ ] P25/P50/P75/P90 percentile calculations
+- [ ] User submission flow
+- [ ] Admin validation panel
+- [ ] Email notification system (Resend)
+
+---
+
+### 📋 Phase 3: Polish & Launch
+**Status**: Planned
+
+- [ ] UI/UX refinements and responsive design
+- [ ] Performance optimization
+- [ ] SEO implementation
+- [ ] Analytics integration
+- [ ] Beta launch preparation
+- [ ] Documentation finalization
+
+---
+
+### 📈 Phase 4: Data Collection
+**Status**: Planned
+
+- [ ] Community outreach and user acquisition
+- [ ] Data quality monitoring
+- [ ] User feedback collection
+- [ ] Iterative improvements
+- [ ] Marketing and growth initiatives
+
+---
 
 See `/implementation_plan.md` for full details.
 
